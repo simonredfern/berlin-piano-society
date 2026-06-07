@@ -151,32 +151,6 @@ img { max-width: 100%; display: block; }
 @media (max-width: 720px) { .vtag { display: none; } }
 
 /* ============================================================
-   Ticker / marquee
-   ============================================================ */
-.ticker {
-  background: var(--bg2);
-  color: var(--acid);
-  overflow: hidden;
-  white-space: nowrap;
-  border-top: 1px solid var(--line);
-  border-bottom: 1px solid var(--line);
-}
-.ticker__track {
-  display: inline-block;
-  padding: .55rem 0;
-  font-family: var(--mono); font-weight: 700;
-  font-size: .85rem; letter-spacing: .12em; text-transform: uppercase;
-  animation: ticker 26s linear infinite;
-  will-change: transform;
-}
-.ticker__track span { padding: 0 1rem; }
-.ticker__track .sep { color: var(--red); }
-@keyframes ticker {
-  from { transform: translateX(0); }
-  to   { transform: translateX(-50%); }
-}
-
-/* ============================================================
    Spec sheet (event data block)
    ============================================================ */
 .spec { border-top: 1px solid var(--line); }
@@ -303,7 +277,10 @@ section.block { padding: clamp(2.5rem, 6vw, 4.5rem) 0; }
   font-family: var(--mono); font-size: .72rem; color: var(--dim);
   letter-spacing: .03em; text-align: right;
 }
+.art-panel.current { border-color: var(--acid); }
+.art-panel.current .cap .d { color: var(--acid); }
 .art-panel .mark { width: min(360px, 85%); height: auto; }   /* inline SVG inherits stage color */
+.art-panel .raster.badge { mix-blend-mode: lighten; }        /* badge's black ground melts into the dark stage */
 .art-panel .raster { width: min(360px, 90%); height: auto; display: block; }
 .art-panel .raster.invert {
   filter: grayscale(1) invert(1) contrast(1.12) brightness(1.05);
