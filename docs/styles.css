@@ -57,14 +57,16 @@ img { max-width: 100%; display: block; }
 .brand {
   display: inline-flex; align-items: center;
   color: var(--fg);
+  flex: 0 0 auto;            /* never let the logo get squashed by the nav */
 }
 .brand:hover { color: var(--fg); }
 .brand .logo-img {
   height: 3.1rem; width: auto; display: block;
+  flex: 0 0 auto;
   mix-blend-mode: lighten;   /* lets the badge's black ground melt into the dark header */
 }
 
-.top nav { display: flex; gap: .4rem; }
+.top nav { display: flex; gap: .4rem; flex-wrap: wrap; justify-content: flex-end; }
 .top nav a {
   font-family: var(--mono);
   font-size: .76rem; font-weight: 700;
@@ -155,6 +157,11 @@ img { max-width: 100%; display: block; }
 }
 .vtag b { color: var(--acid); font-weight: 700; }
 @media (max-width: 720px) { .vtag { display: none; } }
+@media (max-width: 480px) {
+  .top .bar { padding: .75rem 1rem; }
+  .brand .logo-img { height: 2.5rem; }
+  .top nav a { font-size: .7rem; padding: .3rem .4rem; }
+}
 
 /* ============================================================
    Spec sheet (event data block)
