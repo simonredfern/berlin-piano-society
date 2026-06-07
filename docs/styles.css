@@ -343,6 +343,8 @@ footer.site .wrap {
   display: flex; justify-content: space-between; flex-wrap: wrap; gap: 1rem;
   font-family: var(--mono); font-size: .75rem; letter-spacing: .14em; text-transform: uppercase;
 }
+footer.site a { color: var(--dim); }
+footer.site a:hover, footer.site a[aria-current="page"] { color: var(--acid); }
 
 /* ============================================================
    Motion preferences
