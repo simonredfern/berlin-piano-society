@@ -9,9 +9,9 @@
   --bg2:   #141413;   /* panel tone                     */
   --fg:    #f4f4ee;   /* off-white text                 */
   --dim:   #87867d;   /* muted grey                     */
-  --acid:  #d98b2f;   /* accent — amber/gold (strings)  */
-  --acid-d:#b5701f;   /* darker brass (hover)           */
-  --red:   #c23a2b;   /* felt red — tiny secondary pop  */
+  --acid:  #c23a2b;   /* accent — felt red              */
+  --acid-d:#9e2c20;   /* darker red (hover)             */
+  --red:   #c23a2b;   /* felt red (same as accent now)  */
   --line:  #2b2b27;   /* grid hairlines                 */
   --max:   80rem;
   --mono: "Space Mono", ui-monospace, "SFMono-Regular", Menlo, monospace;
@@ -159,7 +159,7 @@ img { max-width: 100%; display: block; }
 /* ============================================================
    Spec sheet (event data block)
    ============================================================ */
-.spec { border-top: 1px solid var(--line); }
+.spec { }
 .spec .row {
   display: grid;
   grid-template-columns: 12rem 1fr;
