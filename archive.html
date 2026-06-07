@@ -3,46 +3,44 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Archive — Berlin Piano Society</title>
+  <title>Berlin Piano Society — Archive</title>
   <meta name="description" content="A log of past evenings from the Berlin Piano Society — lineups, venues and pictures from previous gatherings." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header class="masthead">
-    <div class="wrap">
-      <a class="brand" href="index.html"><span class="keys">♭♯</span> Berlin Piano Society</a>
-      <input type="checkbox" id="nav-check" />
-      <label class="nav-toggle" for="nav-check" aria-label="Menu">≡</label>
-      <nav class="site">
-        <a href="index.html">Home</a>
-        <a href="archive.html" aria-current="page">Archive</a>
+  <!-- ============ TOP BAR ============ -->
+  <header class="top">
+    <div class="bar">
+      <a class="brand" href="index.html"><span class="kx">♭♯</span> Berlin_Piano_Society</a>
+      <nav>
+        <a href="index.html">[Home]</a>
+        <a href="archive.html" class="on">[Archive]</a>
       </nav>
     </div>
   </header>
 
+  <!-- ============ HERO ============ -->
   <section class="hero">
     <div class="wrap">
-      <p class="eyebrow">Looking back</p>
-      <h1>Event archive.</h1>
-      <p class="lede">A log of past evenings — who played, where we gathered, and a
-        few pictures from each.</p>
+      <span class="vtag">LOG &nbsp;/&nbsp; <b>PAST EVENINGS</b></span>
+      <p class="eyebrow">// looking back</p>
+      <h1 class="mega"><span class="hollow">Archive</span></h1>
     </div>
   </section>
 
-  <hr class="rule" />
-
-  <section>
+  <!-- ============ ARCHIVE LOG ============ -->
+  <section class="block">
     <div class="wrap">
       <p class="section-label">Previous evenings</p>
 
       <!-- EMPTY STATE: remove this block once the first evening has happened. -->
       <div class="archive-empty">
-        <h2>Nothing to see here yet.</h2>
-        <p style="margin-top:1.25rem;"><a class="btn brass" href="index.html">See the next event →</a></p>
+        <h2>Nothing to<br />see here yet.</h2>
+        <p style="margin-top:1.75rem;"><a class="btn" href="index.html">See the next event →</a></p>
       </div>
 
       <!-- ============================================================
@@ -63,19 +61,18 @@
             </p>
           </div>
           <div class="main">
-            <h2>Inaugural Salon Concert</h2>
+            <h2>First Event</h2>
             <ul class="lineup">
               <li>Simon Redfern</li>
               <li>Daniel Tippmann</li>
               <li>JK</li>
             </ul>
             <p>The first gathering of the society — a mixture of improvisation,
-              classical repertoire and a touch of piano &amp; electronics, with wine
-              and conversation to follow.</p>
+              classical repertoire and a touch of piano &amp; electronics.</p>
             <div class="archive-photos">
-              <img src="photos/2026-06-20-1.jpg" alt="Inaugural Salon Concert" loading="lazy" />
-              <img src="photos/2026-06-20-2.jpg" alt="Inaugural Salon Concert" loading="lazy" />
-              <img src="photos/2026-06-20-3.jpg" alt="Inaugural Salon Concert" loading="lazy" />
+              <img src="photos/2026-06-20-1.jpg" alt="First Event" loading="lazy" />
+              <img src="photos/2026-06-20-2.jpg" alt="First Event" loading="lazy" />
+              <img src="photos/2026-06-20-3.jpg" alt="First Event" loading="lazy" />
             </div>
           </div>
         </article>
@@ -85,6 +82,7 @@
     </div>
   </section>
 
+  <!-- ============ FOOTER ============ -->
   <footer class="site">
     <div class="wrap">
       <span>© 2026 Berlin Piano Society</span>

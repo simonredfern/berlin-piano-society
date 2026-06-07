@@ -3,24 +3,22 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Berlin Piano Society</title>
-  <meta name="description" content="A society for pianists and piano lovers in Berlin — recitals, salon concerts and a community around the instrument." />
+  <title>Berlin Piano Society — First Event</title>
+  <meta name="description" content="Berlin Piano Society — First Event. Improv → Bach and back. 20 June 2026, Ritterstraße 50, Kreuzberg. Simon Redfern · Daniel Tippmann · JK." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;700&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <!-- ============ MASTHEAD (same on every page) ============ -->
-  <header class="masthead">
-    <div class="wrap">
-      <a class="brand" href="index.html"><span class="keys">♭♯</span> Berlin Piano Society</a>
-      <input type="checkbox" id="nav-check" />
-      <label class="nav-toggle" for="nav-check" aria-label="Menu">≡</label>
-      <nav class="site">
-        <a href="index.html" aria-current="page">Home</a>
-        <a href="archive.html">Archive</a>
+  <!-- ============ TOP BAR ============ -->
+  <header class="top">
+    <div class="bar">
+      <a class="brand" href="index.html"><span class="kx">♭♯</span> Berlin_Piano_Society</a>
+      <nav>
+        <a href="index.html" class="on">[Home]</a>
+        <a href="archive.html">[Archive]</a>
       </nav>
     </div>
   </header>
@@ -28,19 +26,60 @@
   <!-- ============ HERO ============ -->
   <section class="hero">
     <div class="wrap">
-      <p class="eyebrow">Improv -&gt; Bach and back.</p>
-      <h1>First Event</h1>
-      <p class="lede">An informal community evening of piano, with
-        <strong>Simon Redfern</strong>, <strong>Daniel Tippmann</strong> &amp;
-        <strong>JK</strong>.</p>
-      <p class="hero-details">
-        <span><strong>Saturday 20 June 2026</strong> · 16:00</span>
-        <span><a href="https://maps.app.goo.gl/2x3YHia2PjAfWbLs5" target="_blank" rel="noopener">Ritterstraße 50, 10969 Berlin</a> · Kreuzberg</span>
-      </p>
+      <span class="vtag">N&deg;01 &nbsp;/&nbsp; <b>FIRST EVENT</b></span>
+      <p class="eyebrow">improv —&gt; bach and back.</p>
+      <h1 class="mega">First<br /><span class="hollow">Event</span></h1>
     </div>
   </section>
 
-  <!-- ============ FOOTER (same on every page) ============ -->
+  <!-- ============ TICKER ============ -->
+  <div class="ticker" aria-hidden="true">
+    <div class="ticker__track">
+      <span>First Event</span><span class="sep">/</span>
+      <span>20.06.2026</span><span class="sep">/</span>
+      <span>16:00</span><span class="sep">/</span>
+      <span>Ritterstr. 50, Kreuzberg</span><span class="sep">/</span>
+      <span>Redfern · Tippmann · JK</span><span class="sep">/</span>
+      <span>improv —&gt; bach and back</span><span class="sep">/</span>
+      <span>First Event</span><span class="sep">/</span>
+      <span>20.06.2026</span><span class="sep">/</span>
+      <span>16:00</span><span class="sep">/</span>
+      <span>Ritterstr. 50, Kreuzberg</span><span class="sep">/</span>
+      <span>Redfern · Tippmann · JK</span><span class="sep">/</span>
+      <span>improv —&gt; bach and back</span><span class="sep">/</span>
+    </div>
+  </div>
+
+  <!-- ============ SPEC SHEET ============ -->
+  <section class="block">
+    <div class="wrap">
+      <p class="section-label">The details</p>
+      <div class="spec">
+        <div class="row">
+          <span class="k">Date</span>
+          <span class="v">Saturday 20 June 2026</span>
+        </div>
+        <div class="row">
+          <span class="k">Time</span>
+          <span class="v">16:00</span>
+        </div>
+        <div class="row">
+          <span class="k">Place</span>
+          <span class="v"><a href="https://maps.app.goo.gl/2x3YHia2PjAfWbLs5" target="_blank" rel="noopener">Ritterstraße 50, 10969 Berlin — Kreuzberg ↗</a></span>
+        </div>
+        <div class="row">
+          <span class="k">Line-up</span>
+          <span class="v names"><b>Simon Redfern</b> · <b>Daniel Tippmann</b> · <b>JK</b></span>
+        </div>
+        <div class="row">
+          <span class="k">Programme</span>
+          <span class="v">Improvisation, classical repertoire &amp; piano + electronics</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
   <footer class="site">
     <div class="wrap">
       <span>© 2026 Berlin Piano Society</span>
