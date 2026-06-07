@@ -114,14 +114,20 @@ img { max-width: 100%; display: block; }
   .mega .hollow { -webkit-text-stroke-width: 2px; }
 }
 
-/* hero logo (hand-drawn mark used large, in place of a text H1) */
-.hero-logo { margin: .5rem 0 0; line-height: 0; }
+/* hero lockup — hand-drawn badge + typeset wordmark side by side */
+.hero-lockup {
+  display: flex; align-items: center;
+  gap: clamp(1.25rem, 3.5vw, 3rem);
+  flex-wrap: wrap;
+  margin: .75rem 0 0;
+}
 .logo-big {
-  width: clamp(260px, 46vw, 480px);
-  height: auto; display: block;
-  margin-left: -0.6rem;            /* optical alignment */
+  width: clamp(150px, 24vw, 270px);
+  height: auto; display: block; flex: 0 0 auto;
+  margin-left: -0.6rem;            /* optical alignment of the round badge */
   mix-blend-mode: lighten;         /* black ground of the badge melts into the page */
 }
+.hero-lockup .mega { margin: 0; }
 
 /* hero kicker (under the H1) */
 .kicker {
