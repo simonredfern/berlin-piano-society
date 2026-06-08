@@ -181,6 +181,11 @@ img { max-width: 100%; display: block; }
   letter-spacing: .18em; text-transform: uppercase;
   color: var(--dim);
 }
+.spec .k-img {
+  height: 2.1rem; width: auto; max-width: 100%;
+  align-self: center;
+  mix-blend-mode: lighten; /* hides the black image background on the dark canvas */
+}
 .spec .v {
   font-family: var(--disp);
   font-weight: 500;
