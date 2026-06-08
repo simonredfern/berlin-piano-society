@@ -184,7 +184,7 @@ img { max-width: 100%; display: block; }
 .spec .k-img {
   height: 2.1rem; width: auto; max-width: 100%;
   align-self: center;
-  mix-blend-mode: lighten; /* hides the black image background on the dark canvas */
+  transform: translateY(0.35rem);
 }
 .spec .v {
   font-family: var(--disp);
