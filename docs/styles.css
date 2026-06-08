@@ -144,19 +144,6 @@ img { max-width: 100%; display: block; }
 }
 .kicker .mk { color: var(--red); }
 
-/* vertical poster tag */
-.vtag {
-  position: absolute; top: 0; right: 1.5rem; bottom: 0;
-  display: flex; align-items: center;
-  writing-mode: vertical-rl;
-  font-family: var(--mono); font-size: .72rem; font-weight: 700;
-  letter-spacing: .35em; text-transform: uppercase;
-  color: var(--dim);
-  border-left: 1px solid var(--line);
-  padding-left: .4rem;
-}
-.vtag b { color: var(--acid); font-weight: 700; }
-@media (max-width: 720px) { .vtag { display: none; } }
 @media (max-width: 480px) {
   .top .bar { padding: .75rem 1rem; }
   .brand .logo-img { height: 2.5rem; }
